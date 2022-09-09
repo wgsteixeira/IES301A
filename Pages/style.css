@@ -1,0 +1,15 @@
+#relogio {
+    font-size: 70px;
+    background-color: grey;
+    float: left;
+    padding: 15px;
+    color: white;
+}
+
+#calendario {
+    font-size: 40px;
+    background-color: grey;
+    float: left;
+    padding: 15px;
+    color: white;
+}
