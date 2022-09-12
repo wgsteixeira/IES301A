@@ -8,13 +8,14 @@ function zeroEsquerda(x) {
 
 function diaSemana(dia) {
 
+    if (dia == 0) dia = "Domingo"
     if (dia == 1) dia = "Segunda-Feira"
     if (dia == 2) dia = "Terça-Feira"
     if (dia == 3) dia = "Quarta-Feira"
     if (dia == 4) dia = "Quinta-Feira"
     if (dia == 5) dia = "Sexta-Feira"
     if (dia == 6) dia = "Sabado"
-    if (dia == 7) dia = "Domingo"
+
 
     return dia
 }

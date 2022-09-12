@@ -1,15 +1,15 @@
 #relogio {
     font-size: 70px;
-    background-color: grey;
-    float: left;
     padding: 15px;
-    color: white;
+    max-width: 350px;
+    margin-left: 50px;
+    margin-top: 50px;
 }
 
 #calendario {
     font-size: 40px;
-    background-color: grey;
-    float: left;
     padding: 15px;
-    color: white;
+    margin-left: 50px;
+    margin-top: 50px;
+    max-width: 600px;
 }
