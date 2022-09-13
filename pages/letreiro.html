@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Introdução</title>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+        function tick() {
+            let frase = "Venha estudar na Fatec";
+            let array = frase.split('');
+            for (let i = 0; i < 22; i++) {
+                const element = (
+                    <p>array[i]</p>
+                )
+            };
+
+            ReactDOM.render(element, document.getElementById('root'));
+        }
+        setInterval(tick, 1000);
+
+    </script>
+</body>
+
+</html>
