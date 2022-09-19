@@ -7,24 +7,38 @@
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        h1 {
+            text-align: center;
+            background: black;
+            color: green;
+            padding: 5px;
+            max-width: 500px;
+            font-family: Helvetica;
+            letter-spacing: 2px;
+
+        }
+    </style>
 </head>
 
 <body>
     <div id="root"></div>
     <script type="text/babel">
 
-        function tick() {
-            let frase = "Venha estudar na Fatec";
-            let array = frase.split('');
-            for (let i = 0; i < 22; i++) {
-                const element = (
-                    <p>array[i]</p>
-                )
-            };
+        let phrase = "VENHA ESTUDAR NA FATEC"
+        let space = "";
+        let count = 0;
 
-            ReactDOM.render(element, document.getElementById('root'));
+        function showText() {
+            const letters = (<h1>{
+                space = space + phrase[count]
+            }</h1>);
+            count++;
+            if (count <= phrase.length) {
+                ReactDOM.render(letters, document.getElementById('root'));
+            }
         }
-        setInterval(tick, 1000);
+        setInterval(showText, 150);
 
     </script>
 </body>
