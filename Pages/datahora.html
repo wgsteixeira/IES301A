@@ -7,25 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data e Hora</title>
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: grey;
+
+        }
+
+        #calendario {
+            font-size: 40px;
+            padding: 15px;            
+            max-width: 500px;
+            background-color: rgba(0, 0, 0, 0.151);
+            margin: 10%;
+            border-radius: 10px;
+            color: white;
+            
+        }        
+    </style>
 
 </head>
 
+<body onload="data()">    
+    <div id="calendario">
+        <span id="d">Dia</span>,
+        <span id="mN">Mes</span> de
+        <span id="mS">Mes</span> de
+        <span id="a">Ano</span>
 
-<body onload="data()"></body>
+    </div>
 
-<div id="calendario">
-    <span id="d">Dia</span>,
-    <span id="mN">Mes</span> de
-    <span id="mS">Mes</span> de
-    <span id="a">Ano</span>
-</div>
-
-
-<script type="text/javascript" src="script.js"></script>
-<script type="text/javascript" src="funcoes.js"></script>
-
-
+    <script type="text/javascript" src="datahora.js"></script>
 </body>
 
 </html>

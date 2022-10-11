@@ -1,3 +1,18 @@
+function animarRelogio() {
+    let atual = new Date()
+
+    let hora = atual.getHours()
+    let minutos = atual.getMinutes()
+    let segundos = atual.getSeconds()
+
+    h.textContent = zeroEsquerda(hora)
+    m.textContent = zeroEsquerda(minutos)
+    s.textContent = zeroEsquerda(segundos)
+
+    setTimeout("animarRelogio()", 1000)
+
+}
+
 function zeroEsquerda(x) {
     let valor = new String(x)
 

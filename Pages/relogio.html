@@ -7,11 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relógio</title>
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: grey;
+        }
+
+        #relogio {
+            font-size: 40px;
+            padding: 30px;            
+            max-width: 200px;
+            background-color: rgba(0, 0, 0, 0.151);
+            margin: 10%;
+            border-radius: 10px;
+            color: white;                 
+        }
+        
+    </style>
 
 </head>
 
-<body onload="animarRelogio()">
+<body onload="animarRelogio()">    
 
     <div id="relogio">
         <span id="h">Hora</span>:
@@ -19,8 +34,7 @@
         <span id="s">Segundos</span>
     </div>
 
-    <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript" src="funcoes.js"></script>
+    <script type="text/javascript" src="relogio.js"></script>
 
 
 </body>
