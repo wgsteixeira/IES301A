@@ -1,41 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relógio</title>
-
-    <style>
-        body {
-            background-color: grey;
-        }
-
-        #relogio {
-            font-size: 40px;
-            padding: 30px;            
-            max-width: 200px;
-            background-color: rgba(0, 0, 0, 0.151);
-            margin: 10%;
-            border-radius: 10px;
-            color: white;                 
-        }
-        
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laboratorio de Engenharia de Software</title>
+    <link href="../style.css" rel="stylesheet">
 
 </head>
 
-<body onload="animarRelogio()">    
+<body onload="animarRelogio()">
 
-    <div id="relogio">
-        <span id="h">Hora</span>:
-        <span id="m">Minuto</span>:
-        <span id="s">Segundos</span>
+    <div class="layout">
+        <div class="box">
+            <div id="relogio">
+                <span id="h">Hora</span>:
+                <span id="m">Minuto</span>:
+                <span id="s">Segundos</span>
+            </div>
+        </div>
     </div>
 
-    <script type="text/javascript" src="relogio.js"></script>
+    <a href="../index.html"><button class="buttonpage">Voltar ao Menu Principal</button></a>
 
+    <script type="text/javascript" src="relogio.js"></script>
 
 </body>
 

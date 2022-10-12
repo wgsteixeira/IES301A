@@ -1,42 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data e Hora</title>
-
-    <style>
-        body {
-            background-color: grey;
-
-        }
-
-        #calendario {
-            font-size: 40px;
-            padding: 15px;            
-            max-width: 500px;
-            background-color: rgba(0, 0, 0, 0.151);
-            margin: 10%;
-            border-radius: 10px;
-            color: white;
-            
-        }        
-    </style>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laboratorio de Engenharia de Software</title>
+    <link href="../style.css" rel="stylesheet">
+    
 </head>
 
-<body onload="data()">    
-    <div id="calendario">
-        <span id="d">Dia</span>,
-        <span id="mN">Mes</span> de
-        <span id="mS">Mes</span> de
-        <span id="a">Ano</span>
+<body onload="data()">
 
+    <h5>Projetos realizados na disciplina de Laboratório de Engenharia de Software - IES301A</h5>
+    
+
+    <div class="layout">        
+        <div class="box">
+            <div id="calendario">
+                <span id="d">Dia</span>,
+                <span id="mN">Mes</span> de
+                <span id="mS">Mes</span> de
+                <span id="a">Ano</span>        
+            </div>
+        </div>
+         
     </div>
 
+    <a href="../index.html"><button class="buttonpage">Voltar ao Menu Principal</button></a>
+
     <script type="text/javascript" src="datahora.js"></script>
+
 </body>
 
 </html>

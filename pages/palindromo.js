@@ -8,8 +8,8 @@ function Palindromo(){
        palindromo += texto[i];
     }
     if (texto == palindromo) {
-       alert("A PALAVRA " + texto + " É UM PALÍNDROMO");
+       alert("O texto digitado " + texto + " é um Palindromo");
     } else {
-       alert("A PALAVRA " + texto + " NÃO É UM PALÍNDROMO");
+       alert("O texto digitado " + texto + " não é um Palindromo");
     }
 }

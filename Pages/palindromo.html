@@ -1,27 +1,34 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Palíndromo</title>
-
-    <style>
-        body {
-            background-color: grey;
-        }
-    </style>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laboratorio de Engenharia de Software</title>
+    <link href="../style.css" rel="stylesheet">
+    
 </head>
 
-<body>
-    <p>Digite uma paravra ou frase para verificar se é palíndromo ou não:</p>
+<body onload="data()">
+
+    <h5>Projetos realizados na disciplina de Laboratório de Engenharia de Software - IES301A</h5>
+    
+
+    <div class="layout">        
+        <div class="box">
+            <p>Digite uma paravra ou frase para verificar se esta é um "Palindromo"</p>
     <div>
         <input id="texto" placeholder="Insira a palavra" autofocus="true">
         <button type="button" onclick="Palindromo()">Verificar</button>
     </div>
+        </div>
+         
+    </div>
 
+    <a href="../index.html"><button class="buttonpage">Voltar ao Menu Principal</button></a>
 
     <script type="text/javascript" src="palindromo.js"></script>
+
 </body>
 
 </html>

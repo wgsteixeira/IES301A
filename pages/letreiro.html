@@ -1,32 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Introdução</title>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laboratorio de Engenharia de Software</title>
+    <link href="../style.css" rel="stylesheet">
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>
-        body {
-            background-color: grey;
-        }
-        
-        h1 {
-            text-align: center;
-            background: black;
-            color: green;
-            padding: 5px;
-            max-width: 500px;
-            font-family: Helvetica;
-            letter-spacing: 2px;
 
-        }
-    </style>
 </head>
 
 <body>
-    <div id="root"></div>
+
+    <div class="layout">
+        <div id="root"></div>
     <script type="text/babel">
 
         let phrase = "VENHA ESTUDAR NA FATEC"
@@ -34,9 +23,9 @@
         let count = 0;
 
         function showText() {
-            const letters = (<h1>{
+            const letters = (<h3>{
                 space = space + phrase[count]
-            }</h1>);
+            }</h3>);
             count++;
             if (count <= phrase.length) {
                 ReactDOM.render(letters, document.getElementById('root'));
@@ -45,6 +34,12 @@
         setInterval(showText, 150);
 
     </script>
+    </div>
+
+    <a href="../index.html"><button class="buttonpage">Voltar ao Menu Principal</button></a>
+
+    <script type="text/javascript" src="relogio.js"></script>
+
 </body>
 
 </html>
