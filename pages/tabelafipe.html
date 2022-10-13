@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projeto Tabela FIPE</title>
+    <link href="../style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <h5>Projetos realizados na disciplina de Laboratório de Engenharia de Software - IES301A</h5>
+
+
+    <div class="layout">
+        <div class="box">
+            <h1>Calcular valor do carro</h1>
+            <form>                
+                <ul>
+                    <li>
+                        <label for="campoMarca" class="label-control">Marca:</label>
+                        <input type="text" name="campoMarca" id="campoMarca" class="form-control">
+                    </li>
+                    <li>
+                        <label for="campoModelo" class="label-control">Modelo: </label>
+                        <input type="text" name="campoModelo" id="campoModelo" class="form-control">
+                    </li>
+                    <li>
+                        <label for="campoAno" class="label-control">Ano: </label>
+                        <input type="number" name="campoAno" id="campoAno" class="form-control">
+                    </li>
+                    <li>
+                        <label for="campoCor" class="label-control">Cor: </label>
+                        <input type="text" name="campoCor" id="campoCor" class="form-control">
+                    </li>
+                    <li>
+                        <label for="campoKm" class="label-control">Quilometragem: </label>
+                        <input type="number" name="campoKm" id="campoKm" class="form-control">
+                    </li>
+                    <li>
+                        <label for="campoValor" class="label-control">Valor Tabela Fipe: </label>
+                        <input type="number" name="campoValor" id="campoValor" class="form-control">
+                    </li>
+                    <li>
+                        <button type="submit" id="teste" class="btn btn-danger">Calcular</button>
+                    </li>
+                </ul>
+            </form>
+
+            <ul>
+                <li>
+                    <h4 id="idadeCarro"></h4>
+                    <h4 id="valorCarro"></h4>                   
+                </li>                
+            </ul>
+
+        </div>
+    </div>
+
+
+    <a href="../index.html"><button class="buttonpage">Voltar ao Menu Principal</button></a>
+
+    <script type="text/javascript" src="tabelafipe.js"></script>
+
+</body>
+
+</html>
