@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Desafio Mozila 01</title>
+    <title>Desafio Mozila</title>
     <link href="../style.css" rel="stylesheet">
 
 </head>
@@ -22,6 +22,7 @@
                 <label for="campoPalpite">Digite seu palpite: </label>
                 <input type="text" id="campoPalpite" class="campoPalpite">
                 <input type="submit" value="Enviar palpite" class="envioPalpite">
+                <div id="start"></div>
             </div>
 
             <div class="resultadoParas">
@@ -32,9 +33,7 @@
         </div>
     </div>
 
-    <a href="../index.html"><button class="buttonpage">Voltar ao Menu Principal</button></a>
-
-    <script type="text/javascript" src="relogio.js"></script>
+    <a href="../index.html"><button class="buttonpage">Voltar ao Menu Principal</button></a>    
 
 </body>
 
@@ -85,7 +84,7 @@
         envioPalpite.disabled = true;
         botaoReinicio = document.createElement('button');
         botaoReinicio.textContent = 'Iniciar novo jogo';
-        document.body.appendChild(botaoReinicio);
+        document.getElementById("start").appendChild(botaoReinicio);
         botaoReinicio.addEventListener('click', reiniciarJogo);
     }
     function reiniciarJogo() {

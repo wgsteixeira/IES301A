@@ -21,6 +21,15 @@ h3 {
     margin-top: 20%;
 }
 
+ul{
+    list-style: none;
+    float: left;
+}
+
+li{
+    padding: 5px;
+}
+
 .form-control {
     float: right;
 }

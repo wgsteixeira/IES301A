@@ -3,11 +3,12 @@ function data() {
     let atual = new Date()
 
     let dia = atual.getDay()
+    let diaN = atual.getDate()
     let mes = atual.getMonth() + 1
     let ano = atual.getFullYear()
 
     d.textContent = diaSemana(dia)
-    mN.textContent = zeroEsquerda(mes)
+    dN.textContent = diaN
     mS.textContent = mesAno(mes)
     a.textContent = ano
 

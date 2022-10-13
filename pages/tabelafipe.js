@@ -11,8 +11,8 @@ document.getElementById("teste").addEventListener("click", function(e){
     carro.valor = document.getElementById("campoValor").value;
 
     console.log(carro.valorMercado());
-    document.getElementById("resultado").innerHTML = carro.anosUtilizacao()+" Anos";
-    document.getElementById("resultado1").innerHTML = "R$"+carro.valorMercado();
+    document.getElementById("idadeCarro").innerHTML = "O veiculo possui  "+carro.anosUtilizacao()+" anos";
+    document.getElementById("valorCarro").innerHTML = "Valor de mercado   "+"R$ "+carro.valorMercado();
 
 })
     
